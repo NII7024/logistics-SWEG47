@@ -1,95 +1,136 @@
+
 .footer {
-  background: url(../Media/arno.jpg);
-  background-size: cover;
-  color: white;
-  padding: 20px;
+  background-color: rgb(28, 76, 138);
+  padding: 30px; /* Maintained padding */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   
-.footer .social-icons {
-  display: flex;
-  margin-bottom: 10px;
+  
 }
 
-.footer .social-icons a {
-  margin: 0 5px;
-}
-
-.footer .social-icons img {
-  width: 30px;
-  height: 30px;
-}
-
-.footer .footer-content {
+.footer-content {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  max-width: 1200px;
+  font-size: medium;
+  color: white;
+  
 }
 
-.footer .contact-info {
+
+.footer-column {
   flex: 1;
-}
-
-.footer .footer-search-container {
-  flex: 1;
+  padding: 20px 5px; /* Adjusted padding for better spacing */
   display: flex;
-  justify-content: flex-end;
-  position: relative;
-  max-width: 300px; /* Adjusted max width */
-  height: 35px; /* Decreased height */
+  flex-direction: column;
+  margin: 0 5px;
+  min-width: 250px; /* Ensure there's a minimum width for the column */
 }
 
-.footer .footer-search-input {
-  width: 100%;
-  height: 100%; /* Ensures the input field matches the container's height */
-  padding: 5px; /* Adjusted padding */
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 14px; /* Adjusted font size */
-  box-sizing: border-box;
-  padding-right: 35px; /* Adjusted padding for the button */
-  transition: border-color 0.3s ease;
+.header-title {
+  display: block; /* Use block to allow width settings */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Optional: Add ellipsis if text is too long */
+  font-weight: bold; /* Ensure text is bold */
+  font-size: 1.6em; /* Optional: Adjust font size if needed */
 }
 
-.footer .footer-search-input:focus {
-  border-color: rgb(28, 76, 138);
-  outline: none;
+
+.contact-info {
+  color: white;
+  text-align: left; /* Align text to the left for contact info */
+  padding-top: 1px;
+  
 }
 
-.footer .footer-search-button {
-  position: absolute;
-  right: 5px; /* Adjusted right padding */
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+.contact-info p {
+  margin: 20px 0; /* Add vertical spacing around the paragraph */
+  line-height: 2.2em; /* Increase line height for better readability */
+  color: white; /* Ensure text is white for visibility */
+  
 }
 
-.footer .footer-search-button img {
-  width: 18px;
-  height: 18px;
+.contact-info .icon {
+  margin-right: 15px; /* Space between icons and text */
+  vertical-align: middle; /* Align icons vertically with text */
 }
 
-.footer .footer-links {
-  margin-top: 20px;
-  display: flex;
-  gap: 15px;
+/* Optional: Add a class for the main description */
+.contact-info .description {
+  margin-bottom: 35px; /* Space below the description text */
+}
+.operating-hours {
+  display: block; /* Makes the line a block element */
+  margin-left: 30px; /* Indent to align with Mon-Fri */
+  margin-top: -5px; /* Optional: Adjust vertical spacing if needed */
 }
 
-.footer .footer-links a {
+.footer-links {
+  color: white;
+  text-align: middle;
+   /* Align text to the left for links */
+}
+
+.footer-links a {
   color: white;
   text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  
+  
 }
 
-.footer .footer-links a:hover {
-  text-decoration: underline;
+
+.footer-links a:hover {
+  color: gray;
+}
+
+.copyright {
+  color: white;
+  margin-top: 10px;
+}
+.copyright p{
+  color: white;
+}
+
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align social icons to the left */
+}
+
+.social-icons-container {
+  display: flex;
+  
+}
+
+.social-icons img {
+  width: 34px;
+  height: 34px;
+  margin: 3px;
+}
+.social-icons p {
+  margin: 10px 0; /* Add vertical spacing above and below the paragraphs */
+  color: white; /* Set text color to white for visibility */
+  text-align: center; /* Center the text */
+  font-size: 1em; /* Set a standard font size */
+  line-height: 0.5; /* Increase line height for better readability */
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin: 10px 0;
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
 }

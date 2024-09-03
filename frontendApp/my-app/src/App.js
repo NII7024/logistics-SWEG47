@@ -12,6 +12,9 @@ import Carts from './components/Carts';
 import { CartProvider } from './components/CartContext';
 import ForgotPassword from './components/ForgotPassword';
 import ResetPassword from './components/ResetPassword';
+import Disclaimer from './components/Disclaimer';
+import Privacy from './components/Privacy';
+import Terms from './components/Terms';
 import './App.css';
 
 function App() {
@@ -31,6 +34,9 @@ function App() {
           <Route path="/carts" element={<Carts />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password/:token" element={<ResetPassword />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms/>} />
         </Routes>
         {location.pathname !== '/login' && <Footer />}
       </div>

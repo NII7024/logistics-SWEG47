@@ -1,0 +1,53 @@
+/* Terms.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+   
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    
+    
+}
+
+.terms-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.terms-container h1 {
+    text-align: center;
+    color: rgb(28, 76, 138);
+}
+
+.terms-container h2 {
+    color: rgb(28, 76, 138);
+    margin-top: 20px;
+}
+
+.terms-container p {
+    color: rgb(28, 76, 138);
+    margin: 10px 0;
+}
+
+.terms-container ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Adjusted for closer bullets */
+    color: rgb(28, 76, 138);
+    font-size: 20px;
+}
+
+.terms-container ul li {
+    margin: 5px 260px; /* Adjusted to remove right margin */
+}
+
+.terms-container strong {
+    color: rgb(28, 76, 138);
+}
